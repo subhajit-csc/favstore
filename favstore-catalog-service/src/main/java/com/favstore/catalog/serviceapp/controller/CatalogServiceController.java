@@ -46,7 +46,7 @@ public class CatalogServiceController {
 	}
 	/**
 	 * Check Product Catalogs by criteria
-	 * @param specialistType
+	 * @param SearchCriteria
 	 * @return ProductCatalog
 	 * @throws ResourceNotFoundException
 	 */

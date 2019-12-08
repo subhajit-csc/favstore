@@ -13,7 +13,8 @@
 	
 	<modules>
 		<module>eureka-server-local</module>
-		<module>products-microservice</module>		
+		<module>favstore-catelog-service</module>
+        <module>favstore-identity-service</module>			
 		<module>api-gateway-microservice</module>		
 	</modules>
 
