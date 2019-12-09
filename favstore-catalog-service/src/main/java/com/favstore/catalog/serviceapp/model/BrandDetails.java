@@ -1,6 +1,12 @@
 package com.favstore.catalog.serviceapp.model;
 
-public class BrandDetails {
+import java.io.Serializable;
+
+public class BrandDetails implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8872147978799164693L;
 	private String name;	
 	private String code;
 	

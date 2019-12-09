@@ -1,9 +1,14 @@
 package com.favstore.catalog.serviceapp.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class CategoryDetails {
+public class CategoryDetails implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3200159497278334485L;
 	private String name;	
 	private String type;
 	private List<ItemDetails> itemDetails;	

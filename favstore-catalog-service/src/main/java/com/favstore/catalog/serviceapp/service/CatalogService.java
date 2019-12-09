@@ -3,6 +3,7 @@ package com.favstore.catalog.serviceapp.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -90,6 +91,12 @@ public class CatalogService {
 		}
 		
 		return productCatalog;
+	}
+	
+	@CachePut("productCatalogs")
+	public ProductCatalog getProductCatalogExtended() throws ResourceNotFoundException {
+		logger.info("getProductCatalogExtended invoked");		
+		return getProductCatalog();
 	}
 	
 }

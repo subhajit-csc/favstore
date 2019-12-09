@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import com.favstore.catalog.serviceapp.service.CatalogService;
 
@@ -13,6 +14,7 @@ import com.favstore.catalog.serviceapp.service.CatalogService;
         org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class}
         )
 @EnableCaching
+@EnableScheduling
 public class CatalogServiceApplication {
 
 	public static void main(String[] args) {

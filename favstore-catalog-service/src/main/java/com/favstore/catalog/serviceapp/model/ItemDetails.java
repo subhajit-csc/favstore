@@ -1,10 +1,16 @@
 package com.favstore.catalog.serviceapp.model;
 
+import java.io.Serializable;
+
 import com.favstore.catalog.serviceapp.entity.ColourCode;
 import com.favstore.catalog.serviceapp.entity.SizeTable;
 
-public class ItemDetails {
+public class ItemDetails implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5732406044629659443L;
 	private String name;	
 	private String description;
 	private String sku;
